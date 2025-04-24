@@ -9,28 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap" rel="stylesheet">
     <!-- FIM GOOGLE FONTS -->
     <link rel="stylesheet" href="index.css"> <!-- Arquivo CSS externo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><!--Icones-->
+
 </head><!--titulo-->
 <body>
 
-<header>
+<header class="hidden">
     <div>
+        <h1>Menu</h1>
         <h1>Duas Barras</h1>
+        <img src="Imagens/logo-com-nome.png" width="100" alt="Logo">
     </div>
 </header><!--cabecalho-->
 
 <main>
 
-    <section class="home">
+    <section class="home hidden">
         <h1>Bem-vindo à Empresa Duas Barras</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam architecto id facilis quisquam. Minima ab excepturi autem porro possimus blanditiis quisquam tenetur amet. Soluta dolore placeat dolor accusantium labore consequuntur.</p>
         <div>
-        <a href="#">
+        <a href="#pagina">
             <button>Saiba Mais</button>
         </a>
         </div>
     </section><!--home-->
 
-    <section class="apresentacao">
+    <section class="apresentacao hidden">
         <div class="img">
             <img src="Imagens/apresentacao.png" alt="pedra" width="400">
         </div>
@@ -40,7 +44,7 @@
         </div>
     </section><!--apresentacao-->
 
-    <section class="historia">
+    <section class="historia hidden">
                 <div>
                     <h1>Nossa História</h1>
                     <p>Fundada no ano de 2000, com a missão de oferecer o melhor em rochas ornamentais! 
@@ -51,13 +55,16 @@
                         Que o crescimento seja próspero para todos nós.</p>
                 </div>
                 <div>
-                    <video src=""></video>
+                    <img class="quadro" src="Imagens/banner.png" width="400" alt="pedra">
                 </div>
     </section><!--historia-->
 
-    <section class="tradicao">
+    <section class="tradicao hidden">
             <div>
-                <img src="" alt="">
+                <video controls loop poster="Imagens/banner.png" width="300px">
+                <source src="Imagens/WhatsApp Video 2025-04-24 at 15.15.49.mp4" type="video/mp4">
+                <track src="legendas.vtt" kind="subtitles" srclang="pt-br" label="Português">
+                </video>
             </div>
             <div>
                 <h1>Tradição e Inovação</h1>
@@ -68,55 +75,33 @@
             </div>
     </section><!--tradicao-->
 
-    <section class="">
-        <div class="interface">
-            <div class="flex">
-                <div class="img-sobre">
-                    <div class="img-sobre" style="background-image: url(imagens/carro.jpeg);"></div>
-                </div><!--img-sobre-->
-                <div class="txt-sobre">
-                    <h2>Coisas que eu amo em você</h2>
-                    <ol>
-                        <li>Seu sorriso que ilumina tudo ao redor</li>
-                        <li>Sua inteligência e determinação</li>
-                        <li>O brilho dos seus olhos castanhos claros</li>
-                        <li>Seu jeito carinhoso e atencioso</li>
-                        <li>Seu jeito divertido que alegra meus dias</li>
-                        <li>O carinho que coloca em tudo o que faz</li>
-                        <li>Seu olhar apaixonado quando estamos juntos</li>
-                        <li>E mais mil e um motivos...</li>
-                    </ol>
-                </div><!--txt-sobre-->
-            </div><!--flex-->
-        </div><!--interface-->
-    </section><!--sobre2-coisas-que-eu-amo-em-voce-->
+    <section class="barra hidden">
+        <div>
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minima dolorem blanditiis quod tempora omnis accusantium, officia est corporis corrupti assumenda reprehenderit quam doloribus ex esse nostrum a voluptatem perspiciatis.</p>
+        </div>
+        <div>
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minima dolorem blanditiis quod tempora omnis accusantium, officia est corporis corrupti assumenda reprehenderit quam doloribus ex esse nostrum a voluptatem perspiciatis.</p>
+        </div>
+        <div>
+            <h1>Lorem</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt minima dolorem blanditiis quod tempora omnis accusantium, officia est corporis corrupti assumenda reprehenderit quam doloribus ex esse nostrum a voluptatem perspiciatis.</p>
+        </div>
+    </section><!--barra-->
 
-    <section class="galeria" id="Galeria">
-        <div class="interface">
-            <h2 class="titulo">Galeria</h2>
-            <div class="flex">
-                <div class="img-gal" style="background-image: url(imagens/mahuka.jpeg);"></div>
-                <div class="img-gal" style="background-image: url(imagens/banner.png);"></div>
-                <div class="img-gal" style="background-image: url(imagens/banner3.jpg);"></div>
-            </div><!--flex-->
-        </div><!--interface-->
-    </section><!--galeria-->
-
-    <section class="video">
-    <iframe class="arctic" width="250" src="https://youtube.com/embed/m-_2MhQpmMk" frameborder="0" allowfullscreen></iframe>
-    </section><!--VIDEO-YOUTUBE-->
-
-    <section>
-        <h2>Como Te Amar de Mil e Uma Maneiras Diferentes</h2>
-            <video class="momentos" controls width="200" height="360" poster="Imagens/banner.png">
-                <source src="Imagens/Vídeotech.mp4" type="video/mp4">
-            <track kind="subtitles" srclang="pt-br" src="Imagens/Vídeotech.vtt"
-            label="Português">
-                <audio controls>
-                    <source src="Imagens/Vídeotech.mp4" type="audio/mpeg">
-                </audio>
-            </video>
-    </section><!--VIDEO-->
+    <section class="conclusao hidden">
+            <div>
+                <h1>lorem</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident illo rerum quae voluptatibus nobis quod maiores iusto esse soluta aperiam a laudantium, commodi facere architecto exercitationem doloribus. Iure, veniam accusantium? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis corporis quasi nobis vitae, temporibus molestias maiores iste voluptate totam fugiat accusantium ut minus voluptates odio doloribus ab facilis culpa velit.</p>
+                <a href="#concluir">
+                    <button>Saiba Mais</button>
+                </a>
+            </div>
+            <div>
+                <img src="Imagens/logo-com-nome.png" width="300" alt="Foto">
+            </div>
+    </section><!--conclusao-->
 
     <section class="formulario" id="contato">
         <div class="interface">
@@ -177,32 +162,12 @@
 
 </main>
 
-<footer>
-        <div class="interface">
-            <div class="line-footer">
-                <div class="flex">
-                    <div class="logo-footer">
-                        <img src="Imagens/logo.jpeg" width="70" alt=logo>
-                    </div><!--logo-footer-->
-                    <div class="bnt-social">
-                        <a href="https://www.instagram.com/seu_usuario" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                          </a>
-                          
-                          <a href="https://www.facebook.com/seu_usuario" target="_blank">
-                            <i class="fab fa-facebook-f"></i>
-                          </a>
-                          
-                          <a href="https://wa.me/5528999999999" target="_blank">
-                            <i class="fab fa-whatsapp"></i>
-                          </a>
-                        </div><!--bnt-social-->
-                    </div>
-                    </div><!--line-footer-->
-                    <div class="line-footer borda">
-                </div><!--flex-->
-            </div><!--line-footer-->
-        </div><!--interface-->
+<footer class="rodape hidden">
+      <div class="redes">
+        <a href="https://www.facebook.com/duasbarrasgranitos?mibextid=wwXIfr&mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com/duasbarrasgranitos?igsh=MTZ5OXBnbDE0b3pqcQ==" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://api.whatsapp.com/send?phone=%2B5528999597627" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
     <p>&copy; 2025 Duas Barras Granitos. Todos os direitos reservados.</p>
 </footer><!--Rodape-->
 </body>
