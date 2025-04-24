@@ -1,340 +1,149 @@
-/* ESTILO GERAL */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Caveat", cursive;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
+@charset "UTF-8";
 
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
 }
 
 body{
-    height: 100vh;
-    background-image: url(../imagens/banner3.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(255, 255, 255)
 }
-
-.interface{
-    max-width: 1280;
-    margin: 0 auto;
-}
-
-.flex{
-    display: flex;
-}
-
-.btn-contato button{
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #ffe600;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: .2s;
-}
-
-h2.titulo{
-    color:#000000;
-    font-size: 38px;
-    text-align: center;
-}
-
-/* ESTILO DO CABEÇALHO */
 
 header{
-    padding: 40px 4%;
-}
-
-header > .interface{
+    position: fixed;
+    background: rgb(255, 255, 255);
+    padding: 15px;
+    width: 100%;
+    top: 0;
+    left: 0;
     display: flex;
+    justify-content: center;
+}
+
+.home{
+    background: url('Imagens/banner.png') center/cover no-repeat;
+    cursor: pointer;
+    height: 100vh;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
 }
 
-header a{
-    color:#5c5c5c;
-    text-decoration: none;
-    display: inline-block;
-    transition: .2s;
+.home button{
+    cursor: pointer;
+    border: 2px solid #;
+    color: #b9b5b5;
+    border-radius: 4px;
+    padding: 10px 30px;
+    font-size: 15px;
+    margin-top: 20px;
+    background-color: transparent;
 }
 
-header a:hover, form .btn-enviar input:hover, form .btn-limpar input:hover, form .caixa:hover{
-    color: #fff;
-    transform: scale(1.05);
+.home button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 8px #000;
+    transition: 1.8s ease-in-out;
 }
 
-header nav ul{
-    list-style-type: none;
+.home h1 {
+    font-size: 40px;
 }
 
-header nav ul li{
-    display: inline-block;
-    padding: 0 40px;
+.home p {
+    font-size: 20px;
+    max-width: 1000px
 }
 
-header .btn-contato button{
-    padding: 10px 40;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: rgb(245, 211, 126);
-    border: 0;
-    border-radius: 30px;
-}
 
-header .btn-contato button:hover{
-    box-shadow: 0px 0px 8px #ff9500;
-}
-
-/* ESTILO DO TOPO DO SITE */
-section.topo-do-site{
+.apresentacao{
     padding: 40px 4%;
-}
-
-section.topo-do-site .flex{
+    display: flex;
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
-.topo-do-site h1{
-    color: #000000;
-    font-size: 38px;
-    line-height: 40px;
+.apresentacao h1{
+    font-size: 34px;
 }
 
-.topo-do-site .txt-topo-site p{
-    color:#000000;
-    margin: 20px 0px;
+.apresentacao p{
+    font-size: 20px;
 }
 
-/* ESTILO DAS ESPECIALIDADES */
-section.especialidades{
-    padding: 40px 4%;
-}
-
-section.especialidades .flex{
-    gap: 60px
-}
-
-.especialidades .especialidades-box{
-    color:#000000;
-    padding: 40px;
-    border-radius: 20px;
-    margin-top: 45px;
-    transition: .2s;
-}
-
-.especialidades .especialidades-box:hover{
-    transform: scale(1.05);
-    box-shadow: 0 0 8px #ffffffb0;
-}
-
-.especialidades .especialidades-box h3{
-    font-size: 28px;
-    margin: 15px 0; 
-}
-
-/* ESTILO DO SOBRE */
-section.sobre{
-    padding: 40px 4%;
-}
-
-section.sobre .flex{
-    align-items: center;
-    gap: 60px;
-}
-
-.img-sobre{
-    width: 250px;
-    height: 350px;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
+.apresentacao img{
+    border-radius: 2%;
     cursor: pointer;
-    border-radius: 40px;
+    transition: 1.8s ease-in-out;
 }
 
-.img-sobre:hover{
-    background-position: 100% 100%;
+.apresentacao img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 8px #000;
 }
 
-.sobre .txt-sobre{
-    color:#000000
-}
-
-.sobre .txt-sobre h2{
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.sobre .txt-sobre ol{
-    margin: 20px 0;
-    text-align: justify;
-}
-
-/* ESTILO DA GALERIA */
-section.galeria{
-    padding: 80px 4%;
-    box-shadow: 0 0 40px 10px #ffffff42;
-}
-
-section.galeria .flex{
-    justify-content: space-around;
-}
-
-.img-gal{
-    width: 360px;
-    height: 460px;
-    background-size: cover;
-    background-position: 100% 0%;
-    transition: 8s;
-    cursor: pointer;
-    border-radius: 40px;
-}
-
-.img-gal:hover{
-    background-position: 100% 100%;
-}
-
-/* VIDEO */
-section.video .arctic{
-    border-radius: 100px;
-    padding: 20px;
-}
-
-section .momentos{
-    border-radius: 20px;
-}
-
-/* ESTILO DO FORMULARIO DE CONTATO */
-section.formulario{
-    padding: 80px 4%;
-}
-
-form{
-    max-width: 500px;
-    margin: 0 auto;
+.historia {
+    padding: 40px 4%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 40px;
+    gap: 90px;
 }
 
-form .lugar{
-    width: 100%;
-    background-color: #ffcc79bc;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    font-size: 18px;
+.historia h1{
+    font-size: 34px;
 }
 
-form .caixa{
-    width: 100%;
-    background-color: #fbb84d84;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    font-size: 18px;
-    transition: .2s;
-    cursor: pointer;
+.historia p{
+    font-size: 20px;
 }
 
-form .termos{
-    width: 100%;
-    background-color: #ffcc79bc;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #4f4e4e;
-    font-size: 18px;
-}
-
-form .formular{
-    width: 100%;
-    background-color: #ffcc79bc;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #4f4e4e;
-    font-size: 18px;
-}
-
-form input, form textarea{
-    width: 100%;
-    background-color: #ffcc79bc;
-    border: 0;
-    outline: 0;
-    padding: 20px 15px;
-    border-radius: 15px;
-    color: #4f4e4e;
-    font-size: 18px;
-}
-
-form textarea{
-    resize: none;
-    max-height: 200px;
-}
-
-form .btn-enviar{
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-enviar input{
-    width: 120px;
-    background-color: #f39c22;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
-}
-
-form .btn-limpar{
-    margin-top: 20px;
-    text-align: center;
-}
-
-form .btn-limpar input{
-    width: 120px;
-    background-color: #f39c22;
-    font-weight: 700;
-    cursor: pointer;
-    transition: .2s;
-}
-
-/*ESTILO DO RODAPE */
-footer{
+.tradicao {
     padding: 40px 4%;
-    box-shadow: 0 0 40px 10px #ffffff42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
 }
 
-footer .flex{
-    justify-content: space-between;
+.tradicao h1{
+    font-size: 34px;
 }
 
-footer .line-footer{
-    padding: 20px 0;
+.tradicao p{
+    font-size: 20px;
 }
 
-.borda{
-    border-top: 2px solid #ffc44eb3
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 2s;
 }
 
-footer .line-footer p i{
-    color: #3fc462;
-    font-size: 22px;
-}
-
-footer .line-footer p a{
-    color: #000000;
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
 }
